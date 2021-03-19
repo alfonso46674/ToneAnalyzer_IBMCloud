@@ -1,4 +1,5 @@
-@host=http://localhost:8080
+#@host=http://localhost:8080
+@host=http://toneanalyzer-cloudfoundry.us-south.cf.appdomain.cloud
 
 POST {{host}}/toneAnalyzer
 Content-Type: text/plain

@@ -1,0 +1,4 @@
+applications:
+- name: ToneAnalyzer-CloudFoundry
+  random-route: true
+  memory: 128M
