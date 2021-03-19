@@ -1,5 +1,7 @@
 const express = require('express')
 const cors = require('cors')
+const bodyParser = require('body-parser')
+require('dotenv').config()
 
 const app = express()
 
@@ -10,6 +12,10 @@ const HOST = "0.0.0.0"
 const router = require('./routes')
 
 const { json, urlencoded } = express
+
+// parse an HTML body as a string
+app.use(express.text())
+
 
 //configuracion basica
 app.use(json())
